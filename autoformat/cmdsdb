@@ -1,0 +1,23 @@
+#!/bin/sh
+echo "auto fdisk begin"
+
+fdisk /dev/sdb <<EOF
+d
+n
+p
+1
+
+
+w
+EOF
+sleep 60
+echo "auto fdisk end"
+
+echo "begin mkfs.ext3 /dev/sdb1"
+mkfs.ext3 /dev/sdb1
+echo "end mkfs.ext3"
+
+echo "begin tune2fs"
+tune2fs -c -1 -i 0 /dev/sdb1
+echo "end tune2fs"
+
