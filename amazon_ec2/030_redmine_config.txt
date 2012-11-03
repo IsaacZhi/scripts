@@ -1,0 +1,1 @@
+#!/bin/bash# install redmine on ubuntu# base on http://www.redmine.org/projects/redmine/wiki/HowTo_Install_Redmine_in_Ubuntu# I have already install lamp-server #sudo tasksel install lamp-server
