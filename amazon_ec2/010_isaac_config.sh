@@ -124,6 +124,8 @@ sudo gem install haml
 sudo gem install sqlite3
 sudo gem install uglifier
 sudo gem install heroku
+# !    The 'heroku' gem has been deprecated and replaced with the Heroku Toolbelt, download and install from https://toolbelt.heroku.com.
+#wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 sudo gem install execjs
 sudo gem install therubyracer
